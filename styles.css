@@ -1,3 +1,5 @@
+/* Sara Lowenthal 3/31/25 */
+
 /* Base Variables for Customization */
 :root {
     --primary-color: #3498db;
@@ -157,6 +159,9 @@ ul li {
 }
 
 /* Result Section */
+.result.hidden {
+    display: none;
+}
 .result p {
     font-size: 18px;
     margin: 10px 0;
@@ -186,10 +191,10 @@ footer {
     width: 40px;
     height: 40px;
     background-color: #3498db;
-    -webkit-animation: squareToCircle 2s 1s infinite alternate;
+    animation: squareToCircle 2s 1s infinite alternate;
   }
   
-  @-webkit-keyframes squareToCircle {
+  @keyframes squareToCircle {
       0% {
         border-radius: 0 0 0 0;
         background: #2c3e50;
